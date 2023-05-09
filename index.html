@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/92d4158c96.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="presupuesto">
+            <h1>Presupuesto Disponible</h1>
+            <h1 id="presupuesto" class="disponible"></h1>
+        </div>
+        <div class="ingresos">
+            <p>INGRESOS</p>
+            <P id ="valorTotalI" ></P>
+        </div>
+        <div class="egresos">
+            <p>EGRESOS</p>
+            <P id="valorTotalE">$0</P>
+            <p id="porcentajeE" class="porciento2">0%</p>
+        </div>
+    </div>
+    <form class="inputs" id="myForm">
+        <select name="masomenos" id="masomenos">
+            <option selected class="options">+</option>
+            <option class="options">-</option>
+        </select>
+        <input id="descripcion" type="text" class="text" name="descripcion">
+        <input id="valor" type="number" name="valor">
+        <!-- <button type="submit" id="boton" data-accion="PUT" value="Actualizar"><i class="fa-solid fa-check"></i></button> -->
+        <input class="boton" type="submit" data-accion="POST" value="Guardar" class="submit-button" >
+    </form>
+    <div class="tablas">
+        <table class="taaaa">
+            <tr id="tabla1">
+                    <th>INGRESOS</th>
+                    <th>$$$</th>
+                    <th></th>
+            </tr>
+        </table>
+        <table>
+            <tr id="tabla2">
+                <th>EGRESOS</th>
+                <th>$$$</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

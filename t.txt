@@ -1,0 +1,11 @@
+function tablasP(valor){
+    let SumaporcentajeE = 0
+    let porcentajeE = 0
+    let todosPorcentajes = {}
+    valor.forEach(valorr =>{
+        SumaporcentajeE += valorr.valor
+        porcentajeE = (valorr.valor * 100)/SumaporcentajeE
+    })
+    todosPorcentajes.push(porcentajeE)
+    return todosPorcentajes
+}
